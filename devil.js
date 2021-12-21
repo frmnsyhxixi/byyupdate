@@ -1031,7 +1031,7 @@ Untuk Pembayaran Menggunakan Uang Cash/Cod + 2k
 							thumbnail: fs.readFileSync('./media/ganteng.jpg'), }, forwardingScore:508, isForwarded:true, mentionedJid:[Tag + '@s.whatsapp.net', senderr]}})
                             devil.relayWAMessage(prep)
                             break
-        case 'mlsupersloww':
+        case 'mlsuperslow':
                parseMention = (text = '') => {
                return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}
                totalChat = await devil.chats.all()
@@ -1196,6 +1196,264 @@ Jam Operasional : Buka 24 Jam
 Estimasi proses : 1 - 10 menit
 NB : Proses maksimal 24 jam
 *HARGA SEWAKTU WAKTU BERUBAH*
+`                          
+               buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '↩️ BACK TO MENU'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},{buttonId: `${prefix}format2`,buttonText:{displayText: 'FORMAT ORDER'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
+
+               imageMsg = (await devil.prepareMessageMedia(fs.readFileSync(`./media/devil.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/devil.jpg`)})).imageMessage
+
+               buttonsMessage = {
+               contentText: `${menu}`,
+               footerText: `*HARGA SEWAKTU WAKTU BERUBAH*
+`, imageMessage: imageMsg,
+               buttons: buttons,
+               headerType: 4
+}
+            
+               prep = await devil.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo:{ mentionedJid: parseMention(menu), externalAdReply: {
+							title: `Hai ${pushname} 👋`,
+							body: `${tanggal}`,
+							previewType: 1,
+							thumbnailUrl: "https://ibb.co/FzLx165/Nakano.jpg",
+							thumbnail: fs.readFileSync('./media/ganteng.jpg'), }, forwardingScore:508, isForwarded:true, mentionedJid:[Tag + '@s.whatsapp.net', senderr]}})
+                            devil.relayWAMessage(prep)
+                            break
+case 'pubgg':               
+               parseMention = (text = '') => {
+               return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}
+               totalChat = await devil.chats.all()
+               groups = devil.chats.array.filter(v => v.jid.endsWith('g.us'))
+               privat = devil.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+               total = math(`${groups.length}*${privat.length}`)
+               timestampe = speed();
+               latensie = speed() - timestampe             
+               menu =`*UC PUBG MOBILE REG INDO 🇮🇩*
+*VIA ID & NICK*
+*Estimasi proses : 1 - 30 menit, MAX 24 JAM*
+
+52💵 Rp. 9.900
+131💵 Rp. 22.500
+263💵 Rp. 43.000
+530💵 Rp. 88.000
+825💵 Rp. 131.900
+1100💵 Rp. 172.900
+1925💵 Rp. 299.890
+2200💵 Rp. 342.980
+2425💵 Rp. 384.970
+2875💵 Rp. 427.000
+3025💵 Rp. 469.990
+3300💵 Rp. 514.000
+4125💵 Rp. 642.000
+4400💵 Rp. 683.000
+5500💵 Rp. 855.000
+6600💵 Rp. 1.028.000
+*BERLAKU KELIPATAN*
+`                          
+               buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '↩️ BACK TO MENU'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},{buttonId: `${prefix}format2`,buttonText:{displayText: 'FORMAT ORDER'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
+
+               imageMsg = (await devil.prepareMessageMedia(fs.readFileSync(`./media/devil.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/devil.jpg`)})).imageMessage
+
+               buttonsMessage = {
+               contentText: `${menu}`,
+               footerText: `*HARGA SEWAKTU WAKTU BERUBAH*
+`, imageMessage: imageMsg,
+               buttons: buttons,
+               headerType: 4
+}
+            
+               prep = await devil.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo:{ mentionedJid: parseMention(menu), externalAdReply: {
+							title: `Hai ${pushname} 👋`,
+							body: `${tanggal}`,
+							previewType: 1,
+							thumbnailUrl: "https://ibb.co/FzLx165/Nakano.jpg",
+							thumbnail: fs.readFileSync('./media/ganteng.jpg'), }, forwardingScore:508, isForwarded:true, mentionedJid:[Tag + '@s.whatsapp.net', senderr]}})
+                            devil.relayWAMessage(prep)
+                            break
+case 'sosmed':               
+               parseMention = (text = '') => {
+               return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}
+               totalChat = await devil.chats.all()
+               groups = devil.chats.array.filter(v => v.jid.endsWith('g.us'))
+               privat = devil.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+               total = math(`${groups.length}*${privat.length}`)
+               timestampe = speed();
+               latensie = speed() - timestampe             
+               menu =`*° = Tiktok = °*
+
+• Tiktok View
+- 1M View 35rb
+- 5M View 155rb
+( FYP )
+
+• Tiktok Like
+- 1K Like 15rb
+- 5K Like 60rb
+
+• Tiktok Share
+- 1K Share 40Rb
+( REAL )
+- 1K SHARE 50Rb
+( INDONESIA KEMUNGKINAN FYP KALO ORDER BNYK )
+ 
+•  Tiktok Followers
+- 1K Followers 20rb
+( GARANSI 30 HARI ) 
+*SLOW 1-8 HARI KELAR*
+
+*° = Instagram = °*
+
+• Folls pasif Instagram
+
+*< BOT >*
+- 1K Folls 8.000 
+( HIGH DROP 90-100% NO GARANSI )
+
+- 1K Folls 15rb
+- 10K Folls 105rb
+- 100K Folls 830rb
+( TIDAK DROP GARANSI 90 HARI )
+
+• Likes Pasif Instagram
+- 1K Likes 13.000
+(Less drop) 
+- 1K Likes 15.000
+( No Guaranteed ) 
+
+• Folls Instagram Real Aktif / Indo
+- 1K Followers 40.000
+- 5K Followers 200.000
+- 10K Followers 345.000
+( Real indo statistic )
+ 
+• Folls GA Instagram Real Indo
+- 10K Followers 330.000
+- 15K Followers 465.000
+- 50K+ Followers 620.000
+- 70K Followers 125.000
+- 100K Followers 1.850.000
+Note : Jasa Promote IG anda untuk menaikan Followers Indonesia 100% Murni VIA TAG ARTIS
+
+• Instagram Live Stream
+- 100 View 20rb
+
+*° = YouToube = °*
+
+• Yt Likes
+- 100 Like 9.500
+- 500 Like 25.000
+- 1K Like 35.500
+
+• Yt Live Stream
+- 1K View 30rb
+- 1K View 40rb
+( BEDA HARGA BEDA KUALLITAS , ORDER BANYAK BONUS )
+ 
+• Yt Jam Tayang 
+- 1K Jam - 115.000
+( No Guaranteed ) 
+- 1K Jam - 170.000
+( 30D Guaranteed KALO DROP )
+( BONUS VIEW )
+
+*° = TELEGRAM = °*
+
+• TELEGRAM Member
+- 1K Member 25RB
+- 1K Member 30RB
+( NO GARANSI )
+
+Guaranted : * Garansi *
+JIKA DROP DAN STATUS GARANSI , MAKA AKAN DI ISI ULANG.
+`                          
+               buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '↩️ BACK TO MENU'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},{buttonId: `${prefix}format2`,buttonText:{displayText: 'FORMAT ORDER'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
+
+               imageMsg = (await devil.prepareMessageMedia(fs.readFileSync(`./media/devil.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/devil.jpg`)})).imageMessage
+
+               buttonsMessage = {
+               contentText: `${menu}`,
+               footerText: `*HARGA SEWAKTU WAKTU BERUBAH*
+`, imageMessage: imageMsg,
+               buttons: buttons,
+               headerType: 4
+}
+            
+               prep = await devil.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo:{ mentionedJid: parseMention(menu), externalAdReply: {
+							title: `Hai ${pushname} 👋`,
+							body: `${tanggal}`,
+							previewType: 1,
+							thumbnailUrl: "https://ibb.co/FzLx165/Nakano.jpg",
+							thumbnail: fs.readFileSync('./media/ganteng.jpg'), }, forwardingScore:508, isForwarded:true, mentionedJid:[Tag + '@s.whatsapp.net', senderr]}})
+                            devil.relayWAMessage(prep)
+                            break
+case 'genshinn':               
+               parseMention = (text = '') => {
+               return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}
+               totalChat = await devil.chats.all()
+               groups = devil.chats.array.filter(v => v.jid.endsWith('g.us'))
+               privat = devil.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+               total = math(`${groups.length}*${privat.length}`)
+               timestampe = speed();
+               latensie = speed() - timestampe             
+               menu =`*List genshin impact*
+
+Status Ready✅
+=========================
+Via ID
+*60 G crystal* Rp 12.800❄️
+*330 G crystal* Rp 61.700❄️
+*1090 G crystal* Rp 185.700❄️
+*2240 G crystal* Rp 397.000❄️
+*3880 G crystal* Rp 610.000❄️
+*8080 G crystal* Rp 1.220.000❄️
+===========================
+*BLESSING* 65.000🐱
+`                          
+               buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '↩️ BACK TO MENU'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},{buttonId: `${prefix}format2`,buttonText:{displayText: 'FORMAT ORDER'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
+
+               imageMsg = (await devil.prepareMessageMedia(fs.readFileSync(`./media/devil.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/devil.jpg`)})).imageMessage
+
+               buttonsMessage = {
+               contentText: `${menu}`,
+               footerText: `*HARGA SEWAKTU WAKTU BERUBAH*
+`, imageMessage: imageMsg,
+               buttons: buttons,
+               headerType: 4
+}
+            
+               prep = await devil.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo:{ mentionedJid: parseMention(menu), externalAdReply: {
+							title: `Hai ${pushname} 👋`,
+							body: `${tanggal}`,
+							previewType: 1,
+							thumbnailUrl: "https://ibb.co/FzLx165/Nakano.jpg",
+							thumbnail: fs.readFileSync('./media/ganteng.jpg'), }, forwardingScore:508, isForwarded:true, mentionedJid:[Tag + '@s.whatsapp.net', senderr]}})
+                            devil.relayWAMessage(prep)
+                            break
+case 'netflixx':               
+               parseMention = (text = '') => {
+               return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}
+               totalChat = await devil.chats.all()
+               groups = devil.chats.array.filter(v => v.jid.endsWith('g.us'))
+               privat = devil.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+               total = math(`${groups.length}*${privat.length}`)
+               timestampe = speed();
+               latensie = speed() - timestampe             
+               menu =`Netflix Shared (1 Profile) : Rp. 35.000/Bulan
+
+✅ Streaming Ultra HD
+✅ 100% Legal dan safe
+✅ 1 Device (1 Screen)
+✅ Bisa Download dan nonton offline
+✅ Bisa di gunakan di Smart TV, Handphone, Laptop, PS4, IPad, Tablet, Xbox dan lainny
+✅ GARANSI ON
+
+Syarat & Ketentuan :
+⛔ Dilarang Ganti Email dan password
+⛔ Dilarang Jail / Mengutak atik
+⛔ Dilarang Menjual kembali akun yang kami berikan
+⛔ Dilarang berpindah perangkat, Shared itu hanya untuk 1 Perangkat/Device
+
+Melanggar tidak dapat garansi!
+
+*TERIMA KASIH*
 `                          
                buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '↩️ BACK TO MENU'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},{buttonId: `${prefix}format2`,buttonText:{displayText: 'FORMAT ORDER'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
 
@@ -1576,8 +1834,8 @@ Proses maksimal 24 jam
                             break
         case 'list':
                list = []
-               listmenu = [`ff`,`ml`,`sosis`,`cashpb`,`pay`]
-               listmenuu = [`LIST Free Fire`,`LIST MLBB`,`LIST Sausage Man`,`LIST POINT BLANK`,`Metode Pembayaran`]
+               listmenu = [`ff`,`ml`,`sosis`,`cashpb`,`pay`,`mlbbsuperslow`,`genshin`,`netflix`,`sosmed`,`ragnarox`,`valorant`]
+               listmenuu = [`LIST Free Fire`,`LIST MLBB`,`LIST Sausage Man`,`LIST POINT BLANK`,`Metode Pembayaran`,`List MLBB Super Slow`,`List Genshin`,`List Netflix`]
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
