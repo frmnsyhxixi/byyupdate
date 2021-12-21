@@ -943,24 +943,38 @@ devil.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                
  𝘏𝘢𝘭𝘭𝘰 𝘒𝘢𝘬 *${pushname}* TERIMAKASIH SUDAH MENGUNJUNGI Byy Store~            
 
-「 *PRODUK TOKO* 」
-✘ *Layanan TopUp* ✘
-_❏ FreeFiree_
-_❏ Mobile Legend_
-  Fast & SemiFast
-_❏ Sausage Man_
-_❏ Point Blank_
-
-├───
-⬣ #menu =  *Menu Utama*
-⬣ #pay = *Metode Pembayaran*
-│
-⬣ #ff = *TopUp Dm Free Fire*
-⬣ #mlbb = *TopUp Dm Mobile Legend*
-⬣ #cashpb = *TopUp Point Blank*
-⬣ #sausage = *TopUp Candy Sausage Man*
-│
-└──「 \`\`\`Byy Store\`\`\` 」`                          
+*LIST MENU BYY STORE*
+*HARGA RESELLER CHAT ADMIN*
+==========================
+*List* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
+*Mla* : List Harga Diamond MLBB A💎
+*Mlb* : List Harga Diamond MLBB B💎
+*Mlsemic* : List Harga Diamond MlBB Semi C💎
+*Mld* : List Harga Dm MLBB D💎
+*Mlsuperslow* : List Harga Dm Ml Supersloww 💎
+*Genshin* : List Harga G Crystal Genshin 💸
+*Sosis* : List Harga Candy Sausage Man🍬
+*Cashpb* : List Harga Cash PB💰
+*Ff* : List Harga Diamond Free Fire💎
+*Neflix* : Akun Netflix PREMIUM 🎮
+*Rdp* : List Harga rdp💻
+*Sosmed* : List Harga Kebutuhan Sosmed 👾
+*Pubg* : List Harga Uc Pubg💵
+*Ragnarox* : List Harga Ragnarox X💎
+*valorant* : List Harga Valorant 🎮
+========================
+*Reedemml* : Kode Reedem ML💎
+*Rekber* : Harga Jasa Rekber Akun 🌚
+*Mlpo* : List PO ML 💎
+*Promo* : List Promo 💎
+*Pormat* : Cek Format Beli ✅
+*Pay* : Nomer Untuk Tf💵
+*Botwa* : List Harga Bot Wa,Jasa Run Bot🚀
+*Qriss* : Kode Qris📌
+*Caraorder* : Untuk Bertanya Cara Order🔍
+=======================
+*Oiya Jangan Lupa Kasih Prefix Bang*
+Contoh = .menu`                          
                buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '☰ PRICE LIST'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'💰PEMBAYARAN💰'},type:1},{buttonId: `${prefix}owner`,buttonText:{displayText: 'OWNER👤'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
 
                imageMsg = (await devil.prepareMessageMedia(fs.readFileSync(`./media/devil.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/devil.jpg`)})).imageMessage
