@@ -261,7 +261,7 @@ module.exports = devil = async (devil, mek) => {
         const gcount = setting.gcount
         
         const listmsg = (from, title, desc, list) => { // ngeread nya pake rowsId, jadi command nya ga keliatan
-            let po = devil.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "💎MENU LIST💎","footerText": "SILAHKAN PILIH LIST MENU\nDI BAWAH","listType": "SINGLE_SELECT","sections": list}}, {})
+            let po = devil.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "🎮MENU LIST✅","footerText": "SILAHKAN PILIH LIST MENU\nDI BAWAH","listType": "SINGLE_SELECT","sections": list}}, {})
             return devil.relayWAMessage(po, {waitForAck: true})
         }
         
@@ -1031,6 +1031,70 @@ Untuk Pembayaran Menggunakan Uang Cash/Cod + 2k
 							thumbnail: fs.readFileSync('./media/ganteng.jpg'), }, forwardingScore:508, isForwarded:true, mentionedJid:[Tag + '@s.whatsapp.net', senderr]}})
                             devil.relayWAMessage(prep)
                             break
+        case 'mlsupersloww':
+               parseMention = (text = '') => {
+               return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}
+               totalChat = await devil.chats.all()
+               groups = devil.chats.array.filter(v => v.jid.endsWith('g.us'))
+               privat = devil.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+               total = math(`${groups.length}*${privat.length}`)
+               timestampe = speed();
+               latensie = speed() - timestampe             
+               menu =`_*ByyStore BOT*_
+
+*LIST MENU BYY STORE*
+*HARGA RESELLER CHAT ADMIN*
+==========================
+*List* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
+*Mla* : List Harga Diamond MLBB A💎
+*Mlb* : List Harga Diamond MLBB B💎
+*Mlsemic* : List Harga Diamond MlBB Semi C💎
+*Mld* : List Harga Dm MLBB D💎
+*Mlsuperslow* : List Harga Dm Ml Supersloww 💎
+*Genshin* : List Harga G Crystal Genshin 💸
+*Sosis* : List Harga Candy Sausage Man🍬
+*Cashpb* : List Harga Cash PB💰
+*Ff* : List Harga Diamond Free Fire💎
+*Neflix* : Akun Netflix PREMIUM 🎮
+*Rdp* : List Harga rdp💻
+*Sosmed* : List Harga Kebutuhan Sosmed 👾
+*Pubg* : List Harga Uc Pubg💵
+*Ragnarox* : List Harga Ragnarox X💎
+*valorant* : List Harga Valorant 🎮
+========================
+*Reedemml* : Kode Reedem ML💎
+*Rekber* : Harga Jasa Rekber Akun 🌚
+*Mlpo* : List PO ML 💎
+*Promo* : List Promo 💎
+*Pormat* : Cek Format Beli ✅
+*Pay* : Nomer Untuk Tf💵
+*Botwa* : List Harga Bot Wa,Jasa Run Bot🚀
+*Qriss* : Kode Qris📌
+*Caraorder* : Untuk Bertanya Cara Order🔍
+=======================
+*Oiya Jangan Lupa Kasih Prefix Bang*
+Contoh = .menu
+`                          
+               buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '↩️ BACK TO MENU'},type:1},{buttonId:`${prefix}menu`,buttonText:{displayText:'MENU AWAL'},type:1},{buttonId: `${prefix}owner`,buttonText:{displayText: 'ADMIN👤'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
+
+               imageMsg = (await devil.prepareMessageMedia(fs.readFileSync(`./media/devil.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/devil.jpg`)})).imageMessage
+
+               buttonsMessage = {
+               contentText: `${menu}`,
+               footerText: `Happy Shopping _© Byy Store_
+`, imageMessage: imageMsg,
+               buttons: buttons,
+               headerType: 4
+}
+            
+               prep = await devil.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek, contextInfo:{ mentionedJid: parseMention(menu), externalAdReply: {
+							title: `Hai ${pushname} 👋`,
+							body: `${tanggal}`,
+							previewType: 1,
+							thumbnailUrl: "https://ibb.co/FzLx165/Nakano.jpg",
+							thumbnail: fs.readFileSync('./media/ganteng.jpg'), }, forwardingScore:508, isForwarded:true, mentionedJid:[Tag + '@s.whatsapp.net', senderr]}})
+                            devil.relayWAMessage(prep)
+                            break
         case 'ff':
         case 'freefire':               
                parseMention = (text = '') => {
@@ -1105,23 +1169,23 @@ case 'mlbba':
                total = math(`${groups.length}*${privat.length}`)
                timestampe = speed();
                latensie = speed() - timestampe             
-               menu =`─ *Diamond Mobile Legends FAST A* ─
+               menu =`_*ByyStore BOT*_
 *Diamond Mobile Legends Paket A*
 *VIA ID + SERVER*
 
-86💎 = Rp. 19.506
-172💎 = Rp. 38.000
-257💎 = Rp. 57.539
-344💎 = Rp. 76.335
-429💎 = Rp. 95.507
-514💎 = Rp. 114.677
-600💎 = Rp. 133.973
-706💎 = Rp. 152.800
-878💎 = Rp. 189.900
+86💎 = Rp. 19.206
+172💎 = Rp. 37.250
+257💎 = Rp. 56.839
+344💎 = Rp. 75.335
+429💎 = Rp. 93.507
+514💎 = Rp. 111.677
+600💎 = Rp. 132.973
+706💎 = Rp. 150.800
+878💎 = Rp. 187.900
 963💎 = Rp. 205.200
-1050💎 = Rp. 227.900
-1412💎 = Rp. 301.900
-2195💎 = Rp. 446.960
+1050💎 = Rp. 226.900
+1412💎 = Rp. 298.900
+2195💎 = Rp. 443.960
 
 BERLAKU KELIPATAN
 
@@ -1173,13 +1237,13 @@ case 'format2':
 
 39💎 [34+5 Bonus] Rp. 8.938
 65💎 [58+7 Bonus] Rp. 14.540
-92💎 [83+9 Bonus] Rp. 19.800
-133💎 [120+13 Bonus] Rp. 27.950
-266💎 [240+26 Bonus] Rp. 55.500
-400💎 [360+40 Bonus] Rp. 83.590
-534💎 [480+54 Bonus] Rp. 110.940
+92💎 [83+9 Bonus] Rp. 19.970
+133💎 [120+13 Bonus] Rp. 28.950
+266💎 [240+26 Bonus] Rp. 56.500
+400💎 [360+40 Bonus] Rp. 85.000
+534💎 [480+54 Bonus] Rp. 111.940
 670💎 [600+70 Bonus] Rp. 139.900
-1342💎[1200+142 Bonus] Rp. 273.932
+1342💎[1200+142 Bonus] Rp. 272.932
 
 BERLAKU KELIPATAN
 
@@ -1320,9 +1384,9 @@ Proses maksimal 24 jam
 281💎 Rp. 62.700
 460💎 Rp. 98.500
 573💎 Rp. 125.907
-920💎 Rp. 197.798
-1427💎 Rp. 295.430
-1887💎 Rp. 392.832
+920💎 Rp. 198.798
+1427💎 Rp. 296.430
+1887💎 Rp. 394.832
 
 BERLAKU KELIPATAN
 
@@ -1332,13 +1396,6 @@ Twilight⭐ Rp. 105.000
 Jam Operasional : Buka 09.00 - 19.00 WIB (LEWAT JAM DIPROSES BESOK!)
 
 NB : Proses maksimal 24 jam
-*FORMAT ORDER (mlbb)*
-ID :
-(Server) :
-NICK :
-ORDER DM :
-
-*HARGA SEWAKTU WAKTU BERUBAH*
 `                          
                buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '↩️ BACK TO MENU'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},{buttonId: `${prefix}owner`,buttonText:{displayText: 'ADMIN👤'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
 
