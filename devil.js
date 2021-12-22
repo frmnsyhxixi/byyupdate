@@ -985,14 +985,29 @@ Contoh = .menu`
 ${prefix}ff
 ${prefix}mlbb
 ${prefix}sausage
-${prefix}cashpb
+${prefix}Cashpb
+${prefix}Netflix
+${prefix}Genshin
+${prefix}Pubg
+${prefix}Mld
+${prefix}Mlsuperslow
+${prefix}Sosmed
+${prefix}Ragnarox
+${prefix}Valorant
+${prefix}Rekber
+${prefix}Mlpo
+${prefix}Promo
+${prefix}Botwa
+${prefix}reedemml
 
 ── *List Menu* ──
 ${prefix}menu
 ${prefix}pay
 ${prefix}owner
-
-𝙱𝚘𝚝𝚣𝚣 𝙱𝚢 Byy Store
+${prefix}pay
+${prefix}Qriss
+${prefix}caraorder
+Byy Store
 `, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
